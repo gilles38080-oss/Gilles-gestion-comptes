@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion bancaire - Gilles Gestion de comptes</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 25px;
+    text-align: center;
+}
+h1 { color: #b91c1c; }
+</style>
+</head>
+<body>
+
+<h1>Gilles – Gestion de comptes</h1>
+
+<p>Autorisation bancaire reçue.</p>
+<p>Retour vers l'application Gilles en cours...</p>
+
+<script>
+const params = window.location.search;
+const destination = "http://localhost:53682/callback" + params;
+
+window.location.replace(destination);
+</script>
+
+</body>
+</html>
